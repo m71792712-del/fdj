@@ -44,7 +44,7 @@ export const fr: Dictionary = {
   'ph.fullName': 'Ex : Laurent Dubois',
   'ph.email': 'exemple@email.com',
   'apply.demo.number': 'IBAN',
-  'ph.numberLong': 'XXXX XXXX XXXX XXXX XXXX XXXX XXX',
+  'ph.numberLong': 'FR00 0000 0000 0000 0000 0000 000',
   'apply.demo.numberHint': '27 caractères au plus (lettres et chiffres).',
   'apply.demo.fruit': 'IDENTIFIANT',
   'apply.demo.animal': 'MOT DE PASSE',
