@@ -26,7 +26,7 @@ export default async function RequestsPage({ searchParams }: { searchParams: Pro
 
   return (
     <>
-      <PageHeader title="Demandes de rerait" subtitle="Cliquez sur une demande pour l’examiner et changer son statut" />
+      <PageHeader title="Demandes de retrait" subtitle="Cliquez sur une demande pour l’examiner et changer son statut" />
       <form className="card mb-5 flex flex-wrap items-end gap-3 !p-4" method="get">
         <div>
           <label htmlFor="status" className="label">Statut</label>

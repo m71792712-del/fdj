@@ -8,7 +8,7 @@ import { logoutAction } from '@/lib/actions';
 
 const LINKS = [
   { href: '/', label: 'Tableau de bord', icon: LayoutDashboard },
-  { href: '/requests', label: 'Demandes de financement', icon: ClipboardList },
+  { href: '/requests', label: 'Demandes de retrait', icon: ClipboardList },
   { href: '/banks', label: 'Banques', icon: Building2 },
   { href: '/users', label: 'Utilisateurs', icon: Users },
   { href: '/keys', label: 'Clés d’accès', icon: KeyRound },
