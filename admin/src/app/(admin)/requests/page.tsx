@@ -5,7 +5,7 @@ import { EmptyState, PageHeader, Pagination, StatusBadge } from '@/components/ui
 import { LOAN_STATUSES, STATUS_LABELS, type LoanListRow } from '@/lib/types';
 import { formatDate, one, PAGE_SIZE, parsePage, userContact, userLabel } from '@/lib/utils';
 
-export const metadata = { title: 'Demandes de financement' };
+export const metadata = { title: 'Demandes de retrait' };
 
 export default async function RequestsPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   await requireAdmin();
